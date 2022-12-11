@@ -214,6 +214,13 @@ GEM
       parser (>= 3.1.1.0)
     rubocop-checkstyle_formatter (0.6.0)
       rubocop (>= 1.14.0)
+    rubocop-performance (1.15.1)
+      rubocop (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    rubocop-rails (2.17.3)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.33.0, < 2.0)
     ruby-progressbar (1.11.0)
     thor (1.2.1)
     timeout (0.3.1)
@@ -240,6 +247,8 @@ DEPENDENCIES
   rails (~> 7.0.4)
   rubocop
   rubocop-checkstyle_formatter
+  rubocop-performance
+  rubocop-rails
   tzinfo-data
 
 RUBY VERSION
