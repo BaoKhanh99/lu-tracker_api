@@ -28,7 +28,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: our_money_api_test
+  database: lu_tracker_api_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -52,6 +52,6 @@ test:
 #
 production:
   <<: *default
-  database: our_money_api_production
-  username: our_money_api
-  password: <%= ENV["OUR_MONEY_API_DATABASE_PASSWORD"] %>
+  database: lu_tracker_api_production
+  username: lu_tracker_api
+  password: <%= ENV["LU_TRACKER_API_DATABASE_PASSWORD"] %>

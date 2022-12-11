@@ -7,6 +7,7 @@ ruby "3.1.1"
 
 gem "bootsnap", require: false
 gem "config"
+gem "devise"
 gem "dotenv-rails"
 gem "mysql2"
 gem "puma", "~> 5.0"
