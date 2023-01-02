@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::API
-  protect_from_forgery with: :null_session
+  def load_user_authentication
+    @user = User.find_by_email user_params[:email]
+    return @user
+  end
 end
