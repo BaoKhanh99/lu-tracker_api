@@ -479,3 +479,6 @@ Layout/DefEndAlignment:
   SupportedStylesAlignWith:
     - start_of_line
     - def
+
+Style/Documentation:
+  Enabled: false
