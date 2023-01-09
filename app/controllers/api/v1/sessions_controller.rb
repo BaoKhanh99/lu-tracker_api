@@ -7,6 +7,7 @@ class Api::V1::SessionsController < Devise::SessionsController
     sign_in @user, store: false
 
     token = Api::GenerateTokenService.new(@user.id).perform
+    @user.sessions.create! token
 
     render json: token, status: :ok
   end
