@@ -391,6 +391,11 @@ Layout/SpaceInsideHashLiteralBraces:
     - space
     - no_space
 
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  SpaceBeforeBlockParameters: false
+  EnforcedStyle: no_space
+
 Layout/TrailingEmptyLines:
   EnforcedStyle: final_newline
   SupportedStyles:

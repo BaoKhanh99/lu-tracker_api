@@ -1,0 +1,5 @@
+json_web_token:
+  algorithm: RS256
+generate_token:
+  access_token_expires_in: 1440   # 24 hours
+  refresh_token_expires_in: 43200   # 30 days

@@ -6,7 +6,9 @@ class Api::V1::SessionsController < Devise::SessionsController
   def create
     sign_in @user, store: false
 
-    render json: @user, status: :ok
+    token = Api::GenerateTokenService.new(@user.id).perform
+
+    render json: token, status: :ok
   end
 
   private
