@@ -30,3 +30,6 @@
 
 # .env
 /.env
+
+#RSA key
+*_key.pem
